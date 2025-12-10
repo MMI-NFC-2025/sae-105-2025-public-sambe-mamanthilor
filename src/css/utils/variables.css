@@ -1,0 +1,116 @@
+/* ==================== VARIABLES CSS ==================== */
+
+
+
+:root {
+    /* ========== COULEURS ========== */
+    
+    /* Couleurs primaires */
+    --color-primary: #FF6B35;
+    --color-primary-dark: #E55A2B;
+    --color-primary-light: #FFB347;
+    
+    /* Couleurs secondaires */
+    --color-secondary: #004E89;
+    --color-secondary-dark: #003D6B;
+    --color-secondary-light: #1E7CB8;
+    
+    /* Couleurs neutres */
+    --color-white: #FFFFFF;
+    --color-light: #F5F5F5;
+    --color-gray: #888888;
+    --color-dark-gray: #444444;
+    --color-black: #1A1A1A;
+    
+    /* Couleurs de statut */
+    --color-success: #27AE60;
+    --color-warning: #F39C12;
+    --color-error: #E74C3C;
+    
+    /* Couleurs de fond */
+    --color-bg: #FFFFFF;
+    --color-bg-alt: #F9F9F9;
+    --color-border: #E0E0E0;
+
+    /* ========== TYPOGRAPHIE ========== */
+    
+    /* Familles de polices */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-secondary: Georgia, serif;
+    --font-mono: 'Courier New', monospace;
+    
+    /* Tailles de base (mobile-first) */
+    --font-size-base: 16px;
+    --font-size-small: 14px;
+    --font-size-xs: 12px;
+    
+    /* Tailles des titres (mobile) */
+    --font-size-h1: 32px;
+    --font-size-h2: 28px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-h5: 18px;
+    --font-size-h6: 16px;
+    
+    /* Poids des polices */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Hauteur des lignes */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* ========== ESPACEMENTS ========== */
+    
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+
+    /* ========== DIMENSIONS ========== */
+    
+    --max-width-container: 1200px;
+    --max-width-content: 1000px;
+    --max-width-narrow: 600px;
+    
+    --header-height: 70px;
+
+    /* ========== BORDURES ========== */
+    
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    --border-radius-full: 9999px;
+    
+    --border-width: 1px;
+    --border-width-thick: 2px;
+
+    /* ========== OMBRES ========== */
+    
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
+
+    /* ========== TRANSITIONS ========== */
+    
+    --transition-fast: 150ms ease-in-out;
+    --transition-normal: 300ms ease-in-out;
+    --transition-slow: 500ms ease-in-out;
+
+    /* ========== Z-INDEX ========== */
+    
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal: 400;
+    --z-tooltip: 500;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Fanfa'Comtoise est un festival de musique sur les musiques de rues, jazz et fanfares, gratuit, écoresponsable, qui a lieu au centre-ville de Montbéliard.">
+    <meta name="keywords" content="festival, musique, fanfare, jazz, Montbéliard, éco-responsable">
+    <title>La Fanfa'Comtoise - Festival de Musique</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img alt="Logo La Fanfa'Comtoise" src="/assets/icones/logo-fanfa-_2_.svg" />
+            </a>
+            <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__nav" aria-label="Navigation principale">
+                <ul class="header__nav-list">
+                    <li>
+                        <a href="/" class="header__nav-link">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/le-festival.html" class="header__nav-link">Le Festival</a>
+                    </li>
+                    <li>
+                        <a href="/artistes.html" class="header__nav-link">Artistes</a>
+                    </li>
+                    <li>
+                        <a href="/programme.html" class="header__nav-link">Programme</a>
+                    </li>
+                    <li>
+                        <a href="/scènes.html" class="header__nav-link">Scènes</a>
+                    </li>
+                    <li>
+                        <a href="/infos-pratiques.html" class="header__nav-link">Infos Pratiques</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html" class="header__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- SECTION HERO -->
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Jazz, Fanfares & Musiques de Rues</h1>
+                <div class="hero__info">
+                    <div class="hero__info-item">
+                        <span class="hero__icon"><img src="assets/icones/calendrier.svg" alt="date & lieu"></span>
+                        <p>27-29 juin 2025</p>
+                    </div>
+                    <div class="hero__info-item">
+                        <span class="hero__icon"><img src="assets/icones/position.svg" alt="lieu"></span>
+                        <p>Montbéliard</p>
+                    </div>
+                </div>
+                <div class="hero__buttons">
+                    <a href="/programme.html" class="hero__btn hero__btn--primary">
+                        <span><img src="assets/icones/music.svg" alt="musique"></span> Découvrir le programme
+                    </a>
+                    <a href="#billetterie" class="hero__btn hero__btn--secondary">
+                        <span><img src="assets/icones/ticket.svg" alt="billetterie"></span> Billetterie
+                    </a>
+                </div>
+                <p class="hero__badge">Gratuit & Éco</p>
+            </div>
+            <img src="/assets/images/hero du site.avif" alt="Visuel du festival - La Fanfa'Comtoise" class="hero__image">
+        </section>
+
+        <!-- SECTION STATISTIQUES -->
+        <section class="stats">
+            <div class="stats__container">
+                <article class="stats__card">
+                    <span class="stats__icon">🎤</span>
+                    <h3 class="stats__title">6 Artistes</h3>
+                    <p class="stats__description">Jazz, fanfares et musiques de rue</p>
+                </article>
+
+                <article class="stats__card">
+                    <span class="stats__icon"><img src="assets/icones/eco.svg" alt="eco"></span>
+                    <h3 class="stats__title">100% Éco</h3>
+                    <p class="stats__description">Festival écoresponsable et local</p>
+                </article>
+
+                <article class="stats__card">
+                    <span class="stats__icon">🎉</span>
+                    <h3 class="stats__title">Gratuit</h3>
+                    <p class="stats__description">Ouvert et accessible à tous</p>
+                </article>
+
+                <article class="stats__card">
+                    <span class="stats__icon"><img src="assets/icones/scène.svg" alt="scène"></span>
+                    <h3 class="stats__title">3 Scènes</h3>
+                    <p class="stats__description">Dans le centre-ville historique</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION DÉCOUVREZ LE FESTIVAL (CAROUSEL) -->
+        <section class="discover">
+            <h2 class="discover__title">Découvrez le festival</h2>
+            
+            <div class="carousel">
+                <div class="carousel__container">
+                    <!-- SLIDE 1: PROGRAMME -->
+                    <article class="carousel__slide">
+                        <div class="carousel__card">
+                            <span class="carousel__icon"><img src="assets/icones/calendrier.svg" alt=""></span>
+                            <h3 class="carousel__card-title">Programme</h3>
+                            <p class="carousel__card-description">Découvrez tous les concerts et horaires des 3 jours du festival</p>
+                            <a href="/programme.html" class="carousel__link">Voir le programme →</a>
+                        </div>
+                    </article>
+
+                    <!-- SLIDE 2: ARTISTES -->
+                    <article class="carousel__slide">
+                        <div class="carousel__card">
+                            <span class="carousel__icon"><img src="assets/icones/music.svg" alt="musique"></span>
+                            <h3 class="carousel__card-title">Artistes</h3>
+                            <p class="carousel__card-description">Rencontrez les artistes qui feront danser Montbéliard</p>
+                            <a href="/artistes.html" class="carousel__link">Voir les artistes →</a>
+                        </div>
+                    </article>
+
+                    <!-- SLIDE 3: SCÈNES -->
+                    <article class="carousel__slide">
+                        <div class="carousel__card">
+                            <span class="carousel__icon"><img src="assets/icones/tent.svg" alt="scènes"></span>
+                            <h3 class="carousel__card-title">Scènes</h3>
+                            <p class="carousel__card-description">Explorez les différentes scènes du festival en centre-ville</p>
+                            <a href="/scènes.html" class="carousel__link">Voir les scènes →</a>
+                        </div>
+                    </article>
+
+                    <!-- SLIDE 4: INFOS PRATIQUES -->
+                    <article class="carousel__slide">
+                        <div class="carousel__card">
+                            <span class="carousel__icon"><img src="assets/icones/infos pratiques.svg" alt="infos pratiques"></span>
+                            <h3 class="carousel__card-title">Infos Pratiques</h3>
+                            <p class="carousel__card-description">Accès, transport, hébergement et tout ce qu'il faut savoir</p>
+                            <a href="/infos-pratiques.html" class="carousel__link">Infos pratiques →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <button class="carousel__btn carousel__btn--prev" aria-label="Slide précédent"><img src="assets/icones/flèche gauche carousel.svg" alt="flèche gauche"></button>
+                <button class="carousel__btn carousel__btn--next" aria-label="Slide suivant"><img src="assets/icones/flèche droite carousel.svg" alt="flèche droite"></button>
+            </div>
+        </section>
+
+        <!-- SECTION PARTENAIRES -->
+        <section class="partners">
+            <h2 class="partners__title">Nos partenaires</h2>
+            <div class="partners__container">
+                <div class="partners__item">Ville de Montbéliard</div>
+                <div class="partners__item">Pays de Montbéliard Agglomération</div>
+                <div class="partners__item">Région Bourgogne-Franche-Comté</div>
+                <div class="partners__item">Département du Doubs</div>
+                <div class="partners__item">La Poudière</div>
+                <div class="partners__item">Le Moloco</div>
+                <div class="partners__item">Association des commerçants du centre-ville</div>
+                <div class="partners__item">Crédit Agricole</div>
+            </div>
+        </section>
+
+        <!-- SECTION PRÉPAREZ VOTRE VENUE -->
+        <section class="prepare">
+            <div class="prepare__content">
+                <h2 class="prepare__title">Préparez votre venue</h2>
+                <p class="prepare__description">Téléchargez le programme complet et consultez toutes les informations pratiques pour profiter pleinement du festival</p>
+                <div class="prepare__buttons">
+                    <a href="/assets/programme.pdf" class="prepare__btn prepare__btn--primary">
+                        <span><img src="assets/icones/download.svg" alt="télécharger"></span> Télécharger le programme
+                    </a>
+                    <a href="/contact.html" class="prepare__btn prepare__btn--secondary">
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h3 class="footer__title">À propos</h3>
+                <ul class="footer__list">
+                    <li><a href="/le-festival.html" class="footer__link">Le Festival</a></li>
+                    <li><a href="/infos-pratiques.html" class="footer__link">Infos Pratiques</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Contact</h3>
+                <ul class="footer__list">
+                    <li><a href="/contact.html" class="footer__link">Nous contacter</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Réseaux Sociaux</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link" target="_blank">Facebook</a></li>
+                    <li><a href="#" class="footer__link" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__copyright">
+                <p>&copy; 2025 La Fanfa'Comtoise. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/js/script.js"></script>
+</body>
+</html>

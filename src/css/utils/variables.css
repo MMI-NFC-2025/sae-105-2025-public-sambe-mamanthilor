@@ -1,0 +1,105 @@
+/* ==================== VARIABLES CSS ==================== */
+
+
+:root {
+    /* -------- COULEURS PRIMAIRES -------- */
+    --color-primary: #FF6B35;           /* Orange vif - couleur principale */
+    --color-primary-dark: #E55A2B;      /* Orange foncé - pour hover */
+    --color-primary-light: #FFB347;     /* Orange clair - pour backgrounds */
+
+    /* -------- COULEURS SECONDAIRES -------- */
+    --color-secondary: #004E89;         /* Bleu marine - couleur secondaire */
+    --color-secondary-dark: #003D6B;    /* Bleu foncé */
+    --color-secondary-light: #1E7CB8;   /* Bleu clair */
+
+    /* -------- COULEURS NEUTRES -------- */
+    --color-white: #FFFFFF;             /* Blanc */
+    --color-light: #F5F5F5;             /* Gris très clair */
+    --color-gray: #888888;              /* Gris moyen */
+    --color-dark-gray: #444444;         /* Gris foncé */
+    --color-black: #1A1A1A;             /* Noir */
+
+    /* -------- COULEURS DE STATUT -------- */
+    --color-success: #27AE60;           /* Vert - succès */
+    --color-warning: #F39C12;           /* Orange - attention */
+    --color-error: #E74C3C;             /* Rouge - erreur */
+
+    /* -------- COULEURS DE FOND -------- */
+    --color-bg: #FFFFFF;                /* Fond blanc */
+    --color-bg-alt: #F9F9F9;            /* Fond gris clair alternatif */
+    --color-border: #E0E0E0;            /* Bordure grise */
+
+    /* -------- TYPOGRAPHIE - FAMILLES DE POLICES -------- */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Police principale */
+    --font-secondary: Georgia, serif;                                    /* Police secondaire */
+    --font-mono: 'Courier New', monospace;                               /* Police monospace */
+
+    /* -------- TYPOGRAPHIE - TAILLES -------- */
+    --font-size-base: 16px;             /* Taille de base */
+    --font-size-small: 14px;            /* Petit texte */
+    --font-size-xs: 12px;               /* Très petit */
+
+    /* Tailles des titres */
+    --font-size-h1: 48px;               /* Très grand titre */
+    --font-size-h2: 36px;               /* Grand titre */
+    --font-size-h3: 28px;               /* Titre moyen */
+    --font-size-h4: 24px;               /* Petit titre */
+    --font-size-h5: 20px;               /* Très petit titre */
+    --font-size-h6: 18px;               /* Titre minimal */
+
+    /* -------- TYPOGRAPHIE - POIDS DES POLICES -------- */
+    --font-weight-light: 300;           /* Léger */
+    --font-weight-normal: 400;          /* Normal */
+    --font-weight-medium: 500;          /* Moyen */
+    --font-weight-semibold: 600;        /* Semi-gras */
+    --font-weight-bold: 700;            /* Gras */
+
+    /* -------- TYPOGRAPHIE - HAUTEUR DE LIGNE -------- */
+    --line-height-tight: 1.2;           /* Compacte (pour titres) */
+    --line-height-normal: 1.5;          /* Normal (pour textes) */
+    --line-height-relaxed: 1.75;        /* Aéré (pour lisibilité) */
+
+    /* -------- ESPACEMENTS -------- */
+    --spacing-xs: 4px;                  /* Très petit espacement */
+    --spacing-sm: 8px;                  /* Petit espacement */
+    --spacing-md: 16px;                 /* Espacement moyen */
+    --spacing-lg: 24px;                 /* Grand espacement */
+    --spacing-xl: 32px;                 /* Très grand espacement */
+    --spacing-2xl: 48px;                /* Énorme espacement */
+    --spacing-3xl: 64px;                /* Très énorme espacement */
+
+    /* -------- DIMENSIONS -------- */
+    --max-width-container: 1200px;      /* Largeur max du conteneur */
+    --max-width-content: 1000px;        /* Largeur max du contenu */
+    --max-width-narrow: 600px;          /* Largeur étroite */
+
+    --header-height: 70px;              /* Hauteur du header */
+
+    /* -------- BORDURES -------- */
+    --border-radius-sm: 4px;            /* Petit rayon de bordure */
+    --border-radius-md: 8px;            /* Rayon moyen */
+    --border-radius-lg: 12px;           /* Grand rayon */
+    --border-radius-xl: 16px;           /* Très grand rayon */
+    --border-radius-full: 9999px;       /* Rayon complet (cercle) */
+
+    --border-width: 1px;                /* Bordure normale */
+    --border-width-thick: 2px;          /* Bordure épaisse */
+
+    /* -------- OMBRES -------- */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);        /* Très légère */
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);         /* Légère */
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);      /* Moyenne */
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);       /* Forte */
+
+    /* -------- TRANSITIONS & ANIMATIONS -------- */
+    --transition-fast: 150ms ease-in-out;              /* Animation rapide */
+    --transition-normal: 300ms ease-in-out;            /* Animation normale */
+    --transition-slow: 500ms ease-in-out;              /* Animation lente */
+
+    /* -------- Z-INDEX (superposition) -------- */
+    --z-dropdown: 100;                  /* Pour dropdowns/menus */
+    --z-sticky: 200;                    /* Pour header sticky */
+    --z-fixed: 300;                     /* Pour fixed elements */
+    --z-modal: 400;                     /* Pour modales */
+    --z-tooltip: 500;                   /* Pour tooltips */
+}

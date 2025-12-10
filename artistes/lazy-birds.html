@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez Lazy Birds, groupe jazz du festival La Fanfa'Comtoise.">
+    <title>Lazy Birds - La Fanfa'Comtoise</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img alt="Logo La Fanfa'Comtoise" src="/assets/icones/logo-fanfa-_2_.svg" />
+            </a>
+            <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__nav" aria-label="Navigation principale">
+                <ul class="header__nav-list">
+                    <li>
+                        <a href="/" class="header__nav-link">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/le-festival.html" class="header__nav-link">Le Festival</a>
+                    </li>
+                    <li>
+                        <a href="/artistes.html" class="header__nav-link">Artistes</a>
+                    </li>
+                    <li>
+                        <a href="/programme.html" class="header__nav-link">Programme</a>
+                    </li>
+                    <li>
+                        <a href="/scènes.html" class="header__nav-link">Scènes</a>
+                    </li>
+                    <li>
+                        <a href="/infos-pratiques.html" class="header__nav-link">Infos Pratiques</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html" class="header__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- BACK LINK -->
+        <a href="/artistes.html" class="back-link">
+            <img src="/assets/icones/flèche gauche carousel.svg" alt="Retour" class="back-link__icon">
+            Retour aux artistes
+        </a>
+
+        <!-- ARTIST HERO -->
+        <section class="artist-hero">
+            <img src="/assets/images/lazy birds.avif" alt="Lazy Birds" class="artist-hero__image">
+            
+            <div class="artist-hero__info">
+                <span class="artist-hero__badge artist-hero__badge--jazz">Jazz</span>
+                <h1 class="artist-hero__title">Lazy Birds</h1>
+                
+                <div class="artist-hero__details">
+                    <div class="artist-hero__detail-item">
+                        <img src="/assets/icones/calendrier.svg" alt="Date" class="artist-hero__detail-icon">
+                        <span>27 juin 2025 à 20:00</span>
+                    </div>
+                    <div class="artist-hero__detail-item">
+                        <img src="/assets/icones/position.svg" alt="Lieu" class="artist-hero__detail-icon">
+                        <span>Place Saint-Martin</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ARTIST -->
+        <section class="artist-about">
+            <div class="artist-about__header">
+                <span class="artist-about__icon">●</span>
+                <h2 class="artist-about__title">À propos de Lazy Birds</h2>
+            </div>
+            
+            <p class="artist-about__text">Formation jazz de la région de Montbéliard, Lazy Birds propose un mélange subtil entre le jazz traditionnel et les sonorités modernes. Leur répertoire varié ravira les amateurs de swing et de bebop.</p>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="artist-gallery">
+            <h2 class="artist-gallery__title">Galerie photos</h2>
+            
+            <div class="artist-gallery__container">
+                <figure class="artist-gallery__item">
+                    <img src="/assets/images/lazy birds.avif" alt="Lazy Birds en concert" class="artist-gallery__image">
+                </figure>
+                
+                <figure class="artist-gallery__item">
+                    <img src="/assets/images/musique de rue.avif" alt="Lazy Birds en action" class="artist-gallery__image">
+                </figure>
+                
+                <figure class="artist-gallery__item">
+                    <img src="/assets/images/programme.avif" alt="Lazy Birds avec public" class="artist-gallery__image">
+                </figure>
+            </div>
+        </section>
+
+        <!-- CONCERT INFO -->
+        <section class="concert-info">
+            <h2 class="concert-info__title">Informations du concert</h2>
+            
+            <div class="concert-info__grid">
+                <!-- DATE & HEURE -->
+                <div class="concert-info__item">
+                    <img src="/assets/icones/calendrier.svg" alt="Date" class="concert-info__icon">
+                    <h3 class="concert-info__label">Date & Heure</h3>
+                    <p class="concert-info__value">27 juin 2025</p>
+                    <p class="concert-info__value">20:00</p>
+                </div>
+
+                <!-- SCÈNE -->
+                <div class="concert-info__item">
+                    <img src="/assets/icones/position.svg" alt="Scène" class="concert-info__icon">
+                    <h3 class="concert-info__label">Scène</h3>
+                    <p class="concert-info__value">Place Saint-Martin</p>
+                </div>
+
+                <!-- GENRE -->
+                <div class="concert-info__item">
+                    <img src="/assets/icones/music.svg" alt="Genre" class="concert-info__icon">
+                    <h3 class="concert-info__label">Genre</h3>
+                    <p class="concert-info__value">Jazz</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="concert-info__item concert-info__item--cta">
+                    <a href="/programme.html" class="concert-info__btn">Voir tout le programme</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h3 class="footer__title">Navigation</h3>
+                <ul class="footer__list">
+                    <li><a href="/" class="footer__link">Accueil</a></li>
+                    <li><a href="/le-festival.html" class="footer__link">Le Festival</a></li>
+                    <li><a href="/programme.html" class="footer__link">Programme</a></li>
+                    <li><a href="/artistes.html" class="footer__link">Artistes</a></li>
+                    <li><a href="/infos-pratiques.html" class="footer__link">Infos Pratiques</a></li>
+                    <li><a href="/contact.html" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Contact</h3>
+                <ul class="footer__list">
+                    <li>
+                        <img src="/assets/icones/position.svg" alt="Lieu" class="footer__icon">
+                        Place Saint-Martin<br>25200 Montbéliard
+                    </li>
+                    <li>
+                        <img src="/assets/icones/mail.svg" alt="Email" class="footer__icon">
+                        <a href="mailto:contact@fanfacomtoise.fr" class="footer__link">contact@fanfacomtoise.fr</a>
+                    </li>
+                    <li>
+                        <img src="/assets/icones/call.svg" alt="Téléphone" class="footer__icon">
+                        <a href="tel:+33381123456" class="footer__link">03 81 12 34 56</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__title">Suivez-nous</h3>
+                <p class="footer__description">Restez informés de l'actualité du festival</p>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <img src="/assets/icones/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <img src="/assets/icones/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <img src="/assets/icones/tic-tac.svg" alt="tiktok">
+                    </a>
+            </div>
+
+            <div class="footer__copyright">
+                <p>&copy; 2025 La Fanfa'Comtoise - Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/js/script.js"></script>
+</body>
+</html>

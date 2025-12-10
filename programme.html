@@ -62,36 +62,91 @@
             </div>
         </section>
 
-        <!-- FILTRES -->
-        <section class="program-filters">
-            <div class="program-filters__header">
-                <h2 class="program-filters__title">
-                    <img src="/assets/icones/filtre.svg" alt="Filtres" class="program-filters__icon">
-                    Filtres
+        <!-- FORMULAIRE DE RECHERCHE AVANCEE -->
+        <section class="search-form">
+            <div class="search-form__header">
+                <h2 class="search-form__title">
+                    <img src="/assets/icones/filter.svg" alt="Recherche" class="search-form__icon">
+                    Trouvez votre concert
                 </h2>
             </div>
 
-            <div class="program-filters__container">
-                <!-- FILTRE JOUR -->
-                <div class="program-filters__group">
-                    <label for="filter-day" class="program-filters__label">Jour</label>
-                    <input type="text" id="filter-day" class="program-filters__input" placeholder="Sélectionner un jour">
+            <form class="search-form__container" method="GET" action="#" novalidate>
+                <!-- RECHERCHE TEXTE -->
+                <div class="search-form__group">
+                    <label for="search-artist" class="search-form__label">Artiste ou mot-clé</label>
+                    <div class="search-form__input-wrapper">
+                        <img src="/assets/icones/search.svg" alt="Recherche" class="search-form__input-icon">
+                        <input 
+                            type="text" 
+                            id="search-artist" 
+                            name="artist" 
+                            class="search-form__input" 
+                            placeholder="Lazy Birds, Jazz, etc."
+                        >
+                    </div>
                 </div>
 
-                <!-- FILTRE GENRE -->
-                <div class="program-filters__group">
-                    <label for="filter-genre" class="program-filters__label">Genre</label>
-                    <input type="text" id="filter-genre" class="program-filters__input" placeholder="Sélectionner un genre">
+                <!-- JOUR -->
+                <div class="search-form__group">
+                    <label for="filter-day" class="search-form__label">Jour</label>
+                    <select id="filter-day" name="day" class="search-form__select">
+                        <option value="">Tous les jours</option>
+                        <option value="vendredi">Vendredi 27 juin</option>
+                        <option value="samedi">Samedi 28 juin</option>
+                        <option value="dimanche">Dimanche 29 juin</option>
+                    </select>
                 </div>
 
-                <!-- BOUTON PDF -->
-                <div class="program-filters__group program-filters__group--pdf">
-                    <a href="#" class="program-filters__pdf-btn">
-                        <img src="/assets/icones/download.svg" alt="Télécharger" class="program-filters__pdf-icon">
-                        Télécharger le programme PDF
+                <!-- GENRE -->
+                <div class="search-form__group">
+                    <label for="filter-genre" class="search-form__label">Genre</label>
+                    <select id="filter-genre" name="genre" class="search-form__select">
+                        <option value="">Tous les genres</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="fanfare">Fanfare</option>
+                        <option value="street">Musique de rue</option>
+                    </select>
+                </div>
+
+                <!-- SCENE -->
+                <div class="search-form__group">
+                    <label for="filter-scene" class="search-form__label">Scène</label>
+                    <select id="filter-scene" name="scene" class="search-form__select">
+                        <option value="">Toutes les scènes</option>
+                        <option value="saint-martin">Place Saint-Martin</option>
+                        <option value="halles">Scène des Halles</option>
+                        <option value="parc">Scène du Parc</option>
+                    </select>
+                </div>
+
+                <!-- HEURE -->
+                <div class="search-form__group">
+                    <label for="filter-time" class="search-form__label">Heure</label>
+                    <input 
+                        type="time" 
+                        id="filter-time" 
+                        name="time" 
+                        class="search-form__input-time"
+                    >
+                </div>
+
+                <!-- BOUTONS -->
+                <div class="search-form__actions">
+                    <button type="submit" class="search-form__btn search-form__btn--search">
+                        <img src="/assets/icones/search.svg" alt="Rechercher" class="search-form__btn-icon">
+                        Rechercher
+                    </button>
+                    <button type="reset" class="search-form__btn search-form__btn--reset">
+                        <img src="/assets/icones/reset.svg" alt="Réinitialiser" class="search-form__btn-icon">
+                        Réinitialiser
+                    </button>
+                    <a href="#" class="search-form__btn search-form__btn--pdf">
+                        <img src="/assets/icones/download.svg" alt="Télécharger" class="search-form__btn-icon">
+                        Programme PDF
                     </a>
                 </div>
-            </div>
+            </form>
         </section>
 
         <!-- PROGRAMME -->

@@ -1,0 +1,134 @@
+/* SECTION DISCOVER */
+.discover {
+  padding: 4rem 1.5rem;
+  background-color: #f6f3e9;
+}
+
+.discover__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+
+/* Conteneur général du carrousel */
+.carousel {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.carousel__container {
+  display: flex;
+  gap: 1.5rem;
+  overflow: hidden;              /* masque les slides à gauche/droite */
+  scroll-behavior: smooth;
+}
+
+/* Chaque slide prend la même largeur */
+.carousel__slide {
+  min-width: calc(33.333% - 1rem); /* 3 cartes visibles sur desktop */
+  flex-shrink: 0;
+}
+
+/* Carte du carrousel */
+.carousel__card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 2rem 1.8rem 2.2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: relative;
+}
+
+/* Bord coloré en haut (comme ton exemple) */
+.carousel__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  border-top: 4px solid #ffb52a;   /* couleur par défaut */
+  pointer-events: none;
+}
+
+/* Icône dans un carré arrondi */
+.carousel__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #f9a825, #ffb52a);
+}
+
+.carousel__icon img {
+  width: 26px;
+  height: 26px;
+}
+
+/* Titre & texte */
+.carousel__card-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222222;
+}
+
+.carousel__card-description {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* Lien "→" */
+.carousel__link {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f29c1f;
+  text-decoration: none;
+}
+
+.carousel__link:hover {
+  text-decoration: underline;
+}
+
+.carousel__btn {
+  position: absolute;
+  bottom: -30px;              /* sous les cartes */
+  top: auto;                  /* annule le centrage vertical */
+  transform: translateY(0);   /* plus de translation verticale */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel__btn--prev {
+  left: 10%;
+}
+
+.carousel__btn--next {
+  right: 10%;
+}
+
+.carousel__btn:hover {
+  transform: translateY(-3px); /* petit effet de hover vers le haut */
+}
+
+.carousel__btn img {
+  width: 18px;
+  height: 18px;
+  filter: invert(0%) brightness(0); /* flèche noire */
+}

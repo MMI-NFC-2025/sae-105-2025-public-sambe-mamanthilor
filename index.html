@@ -14,14 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script type="module" src="./src/js/script.js"></script>
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
         <div class="header__container">
             <a href="/" class="header__logo">
-                <img alt="Logo La Fanfa'Comtoise" src="/assets/icones/logo du site.svg" />
+                <img alt="Logo La Fanfa'Comtoise" src="./assets/icones/logo du site.svg" />
             </a>
             <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation">
                 <span></span>
@@ -60,59 +61,64 @@
     <main class="main">
         <!-- SECTION HERO -->
         <section class="hero">
+            <img src="./assets/images/hero du site.avif" alt="Hero du site" class="hero__bg-image">
             <div class="hero__content">
                 <h1 class="hero__title">Jazz, Fanfares & Musiques de Rues</h1>
-                <div class="hero__info">
+                
+                <div class="hero__infos">
                     <div class="hero__info-item">
-                        <span class="hero__icon"><img src="assets/icones/calendrier.svg" alt="date & lieu"></span>
+                        <span class="hero__info-icon"><img src="./assets/icones/calendrier.svg" alt="date"></span>
                         <p>27-29 juin 2025</p>
                     </div>
                     <div class="hero__info-item">
-                        <span class="hero__icon"><img src="assets/icones/position.svg" alt="lieu"></span>
+                        <span class="hero__info-icon"><img src="./assets/icones/position.svg" alt="lieu"></span>
                         <p>Montbéliard</p>
                     </div>
                 </div>
+                
                 <div class="hero__buttons">
-                    <a href="/programme.html" class="hero__btn hero__btn--primary">
-                        <span><img src="assets/icones/music.svg" alt="musique"></span> Découvrir le programme
+                    <a href="./programme.html" class="hero__btn hero__btn--primary">
+                        <span><img src="./assets/icones/music.svg" alt="musique"></span> Découvrir le programme
                     </a>
                     <a href="#billetterie" class="hero__btn hero__btn--secondary">
-                        <span><img src="assets/icones/ticket.svg" alt="billetterie"></span> Billetterie
+                        <span><img src="./assets/icones/ticket.svg" alt="billetterie"></span> Billetterie
                     </a>
                 </div>
-                <p class="hero__badge">Gratuit & Éco</p>
-            </div>
-            <img src="/assets/images/hero du site.avif" alt="Visuel du festival - La Fanfa'Comtoise" class="hero__image">
-        </section>
-
-        <!-- SECTION STATISTIQUES -->
-        <section class="stats">
-            <div class="stats__container">
-                <article class="stats__card">
-                    <span class="stats__icon">🎤</span>
-                    <h3 class="stats__title">6 Artistes</h3>
-                    <p class="stats__description">Jazz, fanfares et musiques de rue</p>
-                </article>
-
-                <article class="stats__card">
-                    <span class="stats__icon"><img src="assets/icones/eco.svg" alt="eco"></span>
-                    <h3 class="stats__title">100% Éco</h3>
-                    <p class="stats__description">Festival écoresponsable et local</p>
-                </article>
-
-                <article class="stats__card">
-                    <span class="stats__icon">🎉</span>
-                    <h3 class="stats__title">Gratuit</h3>
-                    <p class="stats__description">Ouvert et accessible à tous</p>
-                </article>
-
-                <article class="stats__card">
-                    <span class="stats__icon"><img src="assets/icones/scène.svg" alt="scène"></span>
-                    <h3 class="stats__title">3 Scènes</h3>
-                    <p class="stats__description">Dans le centre-ville historique</p>
-                </article>
+                
+                <p class="hero__badge">
+                    <span><img src="./assets/icones/eco.svg" alt="eco"></span> Gratuit & Éco
+                </p>
             </div>
         </section>
+
+      <!-- SECTION STATISTIQUES -->
+<section class="stats">
+  <div class="stats__container">
+    <article class="stats__card stats__card--artistes">
+      <span class="stats__icon">🎤</span>
+      <h3 class="stats__title">6 Artistes</h3>
+      <p class="stats__description">Jazz, fanfares et musiques de rue</p>
+    </article>
+
+    <article class="stats__card stats__card--eco">
+      <span class="stats__icon"><img src="assets/icones/eco.svg" alt="eco"></span>
+      <h3 class="stats__title">100% Éco</h3>
+      <p class="stats__description">Festival écoresponsable et local</p>
+    </article>
+
+    <article class="stats__card stats__card--gratuit">
+      <span class="stats__icon">🎉</span>
+      <h3 class="stats__title">Gratuit</h3>
+      <p class="stats__description">Ouvert et accessible à tous</p>
+    </article>
+
+    <article class="stats__card stats__card--scenes">
+      <span class="stats__icon"><img src="assets/icones/scène.svg" alt="scène"></span>
+      <h3 class="stats__title">3 Scènes</h3>
+      <p class="stats__description">Dans le centre-ville historique</p>
+    </article>
+  </div>
+</section>
 
         <!-- SECTION DÉCOUVREZ LE FESTIVAL (CAROUSEL) -->
         <section class="discover">
@@ -123,61 +129,109 @@
                     <!-- SLIDE 1: PROGRAMME -->
                     <article class="carousel__slide">
                         <div class="carousel__card">
-                            <span class="carousel__icon"><img src="assets/icones/calendrier.svg" alt=""></span>
+                            <span class="carousel__icon"><img src="./assets/icones/calendrier.svg" alt=""></span>
                             <h3 class="carousel__card-title">Programme</h3>
                             <p class="carousel__card-description">Découvrez tous les concerts et horaires des 3 jours du festival</p>
-                            <a href="/programme.html" class="carousel__link">Voir le programme →</a>
+                            <a href="./programme.html" class="carousel__link">Voir le programme →</a>
                         </div>
                     </article>
 
                     <!-- SLIDE 2: ARTISTES -->
                     <article class="carousel__slide">
                         <div class="carousel__card">
-                            <span class="carousel__icon"><img src="assets/icones/music.svg" alt="musique"></span>
+                            <span class="carousel__icon"><img src="./assets/icones/music.svg" alt="musique"></span>
                             <h3 class="carousel__card-title">Artistes</h3>
                             <p class="carousel__card-description">Rencontrez les artistes qui feront danser Montbéliard</p>
-                            <a href="/artistes.html" class="carousel__link">Voir les artistes →</a>
+                            <a href="./artistes.html" class="carousel__link">Voir les artistes →</a>
                         </div>
                     </article>
 
                     <!-- SLIDE 3: SCÈNES -->
                     <article class="carousel__slide">
                         <div class="carousel__card">
-                            <span class="carousel__icon"><img src="assets/icones/scène.svg" alt="scènes"></span>
+                            <span class="carousel__icon"><img src="./assets/icones/scène.svg" alt="scènes"></span>
                             <h3 class="carousel__card-title">Scènes</h3>
                             <p class="carousel__card-description">Explorez les différentes scènes du festival en centre-ville</p>
-                            <a href="/scènes.html" class="carousel__link">Voir les scènes →</a>
+                            <a href="./scènes.html" class="carousel__link">Voir les scènes →</a>
                         </div>
                     </article>
 
                     <!-- SLIDE 4: INFOS PRATIQUES -->
                     <article class="carousel__slide">
                         <div class="carousel__card">
-                            <span class="carousel__icon"><img src="assets/icones/infos pratiques.svg" alt="infos pratiques"></span>
-                            <h3 class="carousel__card-title">Infos Pratiques</h3>
-                            <p class="carousel__card-description">Accès, transport, hébergement et tout ce qu'il faut savoir</p>
-                            <a href="/infos-pratiques.html" class="carousel__link">Infos pratiques →</a>
+                            <span class="carousel__icon"><img src="./assets/icones/infos pratiques.svg" alt="infos"></span>
+                            <h3 class="carousel__card-title">Infos pratiques</h3>
+                            <p class="carousel__card-description">Tous les détails pour préparer votre visite</p>
+                            <a href="./infos-pratiques.html" class="carousel__link">Infos pratiques →</a>
                         </div>
                     </article>
                 </div>
-
-                <button class="carousel__btn carousel__btn--prev" aria-label="Slide précédent"><img src="assets/icones/flèche gauche carousel.svg" alt="flèche gauche"></button>
-                <button class="carousel__btn carousel__btn--next" aria-label="Slide suivant"><img src="assets/icones/flèche droite carousel.svg" alt="flèche droite"></button>
+                <button class="carousel__btn carousel__btn--prev" aria-label="Slide précédent">
+                    <img src="./assets/icones/flèche gauche carousel.svg" alt="">
+                </button>
+                <button class="carousel__btn carousel__btn--next" aria-label="Slide suivant">
+                    <img src="./assets/icones/flèche droite carousel.svg" alt="">
+                </button>
             </div>
         </section>
+
+       
 
         <!-- SECTION PARTENAIRES -->
         <section class="partners">
             <h2 class="partners__title">Nos partenaires</h2>
-            <div class="partners__container">
-                <div class="partners__item">Ville de Montbéliard</div>
-                <div class="partners__item">Pays de Montbéliard Agglomération</div>
-                <div class="partners__item">Région Bourgogne-Franche-Comté</div>
-                <div class="partners__item">Département du Doubs</div>
-                <div class="partners__item">La Poudière</div>
-                <div class="partners__item">Le Moloco</div>
-                <div class="partners__item">Association des commerçants du centre-ville</div>
-                <div class="partners__item">Crédit Agricole</div>
+            <div class="partners__carousel">
+                <div class="partners__track">
+                    <div class="partners__item">
+                        <img src="./assets/logos/jaidemescommercants.fr-partenaires-ville-montbéliard-09.svg" alt="Ville de Montbéliard">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/pays_de_montbéliard.svg" alt="Pays de Montbéliard Agglomération">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/franche-comté-logo.svg" alt="Région Bourgogne-Franche-Comté">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/departement-doubs-logo.svg" alt="Département du Doubs">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/logo-Poudriere.svg" alt="La Poudière">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/moloco.svg" alt="Le Moloco">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/airbnb.svg" alt="Airbnb">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/credit-agricole-logo.svg" alt="Crédit Agricole">
+                    </div>
+                    <!-- Duplication pour l'effet infini -->
+                    <div class="partners__item">
+                        <img src="./assets/logos/jaidemescommercants.fr-partenaires-ville-montbéliard-09.svg" alt="Ville de Montbéliard">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/pays_de_montbéliard.svg" alt="Pays de Montbéliard Agglomération">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/franche-comté-logo.svg" alt="Région Bourgogne-Franche-Comté">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/departement-doubs-logo.svg" alt="Département du Doubs">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/logo-Poudriere.svg" alt="La Poudière">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/moloco.svg" alt="Le Moloco">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/airbnb.svg" alt="Airbnb">
+                    </div>
+                    <div class="partners__item">
+                        <img src="./assets/logos/credit-agricole-logo.svg" alt="Crédit Agricole">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -200,38 +254,50 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__section">
-                <h3 class="footer__title">À propos</h3>
-                <ul class="footer__list">
-                    <li><a href="/le-festival.html" class="footer__link">Le Festival</a></li>
-                    <li><a href="/infos-pratiques.html" class="footer__link">Infos Pratiques</a></li>
-                </ul>
-            </div>
+  <div class="footer__container">
 
-            <div class="footer__section">
-                <h3 class="footer__title">Contact</h3>
-                <ul class="footer__list">
-                    <li><a href="/contact.html" class="footer__link">Nous contacter</a></li>
-                </ul>
-            </div>
+    <div class="footer__section">
+      <h3 class="footer__title">Navigation</h3>
+      <ul class="footer__list">
+        <li><a href="/" class="footer__link">Accueil</a></li>
+        <li><a href="/le-festival.html" class="footer__link">Le Festival</a></li>
+        <li><a href="/programme.html" class="footer__link">Programme</a></li>
+        <li><a href="/artistes.html" class="footer__link">Artistes</a></li>
+        <li><a href="/infos-pratiques.html" class="footer__link">Infos Pratiques</a></li>
+        <li><a href="/contact.html" class="footer__link">Contact</a></li>
+      </ul>
+    </div>
 
-            <div class="footer__section">
-                <h3 class="footer__title">Réseaux Sociaux</h3>
-                <ul class="footer__list">
-                
-                     <a href="#" class="footer__social-link" aria-label="Facebook"><img src="assets/icones/facebook.svg" alt="Facebook"></a>
-                    <a href="#" class="footer__social-link" aria-label="Instagram"><img src="assets/icones/instagram.svg" alt="Instagram"></a>
-                    <a href="#" class="footer__social-link" aria-label="tiktok"><img src="assets/icones/tic-tac.svg" alt="TikTok"></a>
-                </ul>
-            </div>
+    <div class="footer__section">
+      <h3 class="footer__title">Contact</h3>
+      <ul class="footer__list">
+        <li>Place Saint-Martin<br>25200 Montbéliard</li>
+        <li>contact@fanfacomtoise.fr</li>
+        <li>03 81 12 34 56</li>
+      </ul>
+    </div>
 
-            <div class="footer__copyright">
-                <p>&copy; 2025 La Fanfa'Comtoise. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <div class="footer__section">
+      <h3 class="footer__title">Suivez-nous</h3>
+      <p class="footer__text">Restez informés de l'actualité du festival</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <img src="assets/icones/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <img src="assets/icones/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" class="footer__social-link" aria-label="TikTok">
+          <img src="assets/icones/tic-tac.svg" alt="TikTok">
+        </a>
+      </div>
+    </div>
 
-    <script src="/src/js/script.js"></script>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2025 La Fanfa'Comtoise - Tous droits réservés</p>
+  </div>
+</footer>
 </body>
 </html>

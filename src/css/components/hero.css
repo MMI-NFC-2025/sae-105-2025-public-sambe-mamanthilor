@@ -1,0 +1,174 @@
+/* SECTION HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Image de fond plein écran */
+.hero__bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+
+/* Contenu centré */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  color: var(--light);
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Titre principal */
+.hero__title {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Cartes date / lieu */
+.hero__infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.hero__info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: #ffffff;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: 999px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  color: #222222;
+}
+
+.hero__info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.hero__info-item p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+/* Boutons CTA */
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  width: 100%;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-2xl);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transform: translateY(0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.hero__btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__btn span img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Bouton principal orange */
+.hero__btn--primary {
+  background: #f29c1f; /* orange chaud */
+  color: #ffffff;
+}
+
+/* Bouton secondaire jaune */
+.hero__btn--secondary {
+  background: #ffce3a; /* jaune */
+  color: #2b2b2b;
+}
+
+/* Hover commun */
+.hero__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* Badge "Gratuit & éco" */
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-md) auto 0;
+  padding: var(--spacing-sm) var(--spacing-xl);
+  border-radius: 999px;
+  background: #4caf50;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+
+.hero__badge img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Petites adaptations mobile */
+@media (max-width: 600px) {
+  .hero__info-item {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

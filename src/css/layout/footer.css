@@ -1,0 +1,90 @@
+/* FOOTER */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #eeeeee;
+  font-size: 0.95rem;
+}
+
+.footer__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer__title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222222;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__list li {
+  margin-bottom: 0.4rem;
+  color: #666666;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #666666;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__text {
+  margin: 0 0 0.8rem;
+  color: #666666;
+}
+
+/* Icônes réseaux */
+.footer__socials {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #8fd26a;
+}
+
+.footer__social-link img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Bandeau bas vert */
+.footer__bottom {
+  background-color: #8fd26a;
+  text-align: center;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.85rem;
+  color: #222222;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}

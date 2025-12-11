@@ -1,0 +1,177 @@
+/* SECTION STATISTIQUES */
+.stats {
+  padding: 4rem 1.5rem;
+  background-color: #f6f3e9;
+}
+
+.stats__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* Carte */
+.stats__card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 2.2rem 1.8rem 2rem;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centre l’icône et le texte */
+  text-align: center;
+  gap: 0.75rem;
+}
+
+/* Pastille icône */
+.stats__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffb52a; /* orange par défaut */
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.stats__icon img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Titre & texte */
+.stats__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.stats__description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+/* Couleurs spéciales icônes */
+.stats__card--eco .stats__icon {
+  background-color: #e3f6e5; /* pastille claire */
+}
+
+.stats__card--eco .stats__icon img {
+  filter: invert(41%) sepia(90%) saturate(380%) hue-rotate(80deg)
+          brightness(90%) contrast(95%); /* vert */
+}
+
+.stats__card--scenes .stats__icon {
+  background-color: #f3ad21;
+}
+
+
+/* Icône scènes en noir */
+.stats__card--scenes .stats__icon img {
+  width: 18px;
+  height: 18px;
+  filter: invert(0%) brightness(0); /* noir pur */
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .stats__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats__container {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    padding: 3rem 1.25rem;
+  }
+}
+/* SECTION PRÉPAREZ VOTRE VENUE */
+.prepare {
+  background-color: #f29c1f;      /* orange de fond */
+  color: #ffffff;
+  padding: 3.5rem 1.5rem;
+}
+
+.prepare__content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prepare__title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+}
+
+.prepare__description {
+  margin: 0 0 2rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+/* Boutons */
+.prepare__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.prepare__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 2.3rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+              background-color 0.15s ease, color 0.15s ease;
+}
+
+.prepare__btn span img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Bouton principal : blanc */
+.prepare__btn--primary {
+  background-color: #ffffff;
+  color: #f29c1f;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Bouton secondaire : transparent bord blanc */
+.prepare__btn--secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Hover */
+.prepare__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .prepare__btn {
+    width: 100%;
+  }
+}
+

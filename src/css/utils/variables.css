@@ -34,35 +34,23 @@
 
     /* ========== TYPOGRAPHIE ========== */
     
-    /* Familles de polices */
-    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-secondary: Georgia, serif;
-    --font-mono: 'Courier New', monospace;
-    
-    /* Tailles de base (mobile-first) */
+    --font-primary: 'Inter', sans-serif;
     --font-size-base: 16px;
-    --font-size-small: 14px;
-    --font-size-xs: 12px;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+    --font-size-h6: 1rem;
     
-    /* Tailles des titres (mobile) */
-    --font-size-h1: 32px;
-    --font-size-h2: 28px;
-    --font-size-h3: 24px;
-    --font-size-h4: 20px;
-    --font-size-h5: 18px;
-    --font-size-h6: 16px;
-    
-    /* Poids des polices */
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     
-    /* Hauteur des lignes */
-    --line-height-tight: 1.2;
-    --line-height-normal: 1.5;
-    --line-height-relaxed: 1.75;
+    --line-height-normal: 1.6;
+    --line-height-tight: 1.4;
 
     /* ========== ESPACEMENTS ========== */
     
@@ -71,46 +59,11 @@
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
-    --spacing-2xl: 48px;
-    --spacing-3xl: 64px;
 
-    /* ========== DIMENSIONS ========== */
+    /* ========== AUTRES VARIABLES ========== */
     
-    --max-width-container: 1200px;
-    --max-width-content: 1000px;
-    --max-width-narrow: 600px;
-    
-    --header-height: 70px;
-
-    /* ========== BORDURES ========== */
-    
-    --border-radius-sm: 4px;
-    --border-radius-md: 8px;
-    --border-radius-lg: 12px;
-    --border-radius-xl: 16px;
-    --border-radius-full: 9999px;
-    
+    --transition-normal: 0.3s ease-in-out;
     --border-width: 1px;
-    --border-width-thick: 2px;
-
-    /* ========== OMBRES ========== */
-    
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
-    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
-
-    /* ========== TRANSITIONS ========== */
-    
-    --transition-fast: 150ms ease-in-out;
-    --transition-normal: 300ms ease-in-out;
-    --transition-slow: 500ms ease-in-out;
-
-    /* ========== Z-INDEX ========== */
-    
-    --z-dropdown: 100;
-    --z-sticky: 200;
-    --z-fixed: 300;
-    --z-modal: 400;
-    --z-tooltip: 500;
+    --header-height: 60px;
+    --z-dropdown: 1000;
 }

@@ -1,114 +1,12 @@
-/* ==================== MEDIA.CSS ==================== */
-/* Étape 3b/5 ITCSS : Media queries - Responsive design */
-/* Mobile-first : partir du mobile, augmenter sur desktop */
-
-/* -------- TABLET (768px et plus) -------- */
-
-@media (min-width: 768px) {
-    :root {
-        /* Augmenter les tailles de titre */
-        --font-size-h1: 48px;
-        --font-size-h2: 36px;
-        --font-size-h3: 28px;
-        --font-size-h4: 24px;
-    }
-
-    .container {
-        max-width: var(--max-width-container);
-        padding-left: var(--spacing-lg);
-        padding-right: var(--spacing-lg);
-    }
-
-    section {
-        padding: var(--spacing-3xl) var(--spacing-lg);
-    }
+img,
+picture,
+video,
+canvas {
+  display: block;           /* Supprime l'espace sous l'image (inline) */
+  max-width: 100%;          /* Ne dépasse jamais son conteneur */
+  height: auto;             /* Garde les proportions */
 }
 
-/* -------- DESKTOP (992px et plus) -------- */
-
-@media (min-width: 992px) {
-    section {
-        padding: var(--spacing-3xl) var(--spacing-lg);
-    }
-}
-
-/* -------- LARGE DESKTOP (1200px et plus) -------- */
-
-@media (min-width: 1200px) {
-    :root {
-        --spacing-xl: 40px;
-        --spacing-2xl: 60px;
-        --spacing-3xl: 80px;
-    }
-}
-
-/* -------- LANDSCAPE (Mode paysage) -------- */
-
-@media (orientation: landscape) and (max-height: 500px) {
-    section {
-        padding: var(--spacing-lg);
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-}
-
-/* -------- PRINT (Impression) -------- */
-
-@media print {
-    .header,
-    .footer,
-    .no-print {
-        display: none;
-    }
-
-    body {
-        background-color: white;
-        color: black;
-    }
-
-    section {
-        page-break-inside: avoid;
-    }
-
-    a {
-        text-decoration: underline;
-    }
-}
-
-/* -------- ACCESSIBILITY - Reduced Motion -------- */
-
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* -------- DARK MODE -------- */
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-bg: #1a1a1a;
-        --color-bg-alt: #2a2a2a;
-        --color-border: #3a3a3a;
-        --color-black: #f5f5f5;
-        --color-dark-gray: #b0b0b0;
-        --color-gray: #808080;
-    }
-
-    body {
-        background-color: var(--color-bg);
-        color: var(--color-black);
-    }
-}
-
-/* -------- HIGH DENSITY DISPLAYS (Retina) -------- */
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    body {
-        font-weight: var(--font-weight-light);
-    }
+figure {
+  margin: 0;
 }

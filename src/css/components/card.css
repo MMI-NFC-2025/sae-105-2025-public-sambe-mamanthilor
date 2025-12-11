@@ -174,4 +174,253 @@
     width: 100%;
   }
 }
+/* PAGE LE FESTIVAL */
+
+/* En-tête de page */
+.page-header {
+  background-color: #f6f3e9;
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.page-header__title {
+  margin: 0 0 0.75rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #222222;
+}
+
+.page-header__subtitle {
+  margin: 0;
+  max-width: 620px;
+  margin-inline: auto;
+  font-size: 0.98rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Sections génériques */
+.festival-section {
+  padding: 3rem 1.5rem;
+  background-color: #f6f3e9;
+}
+
+.festival-section:nth-of-type(odd) {
+  background-color: #fdfbf6;
+}
+
+.festival-section__header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.festival-section__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffb52a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent; /* juste un rond */
+}
+
+.festival-section__title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.festival-section__content {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  font-size: 0.98rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+.festival-section__content p {
+  margin-bottom: 1rem;
+}
+
+/* Cartes chiffres-clés */
+.festival-section__stats {
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.4rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card__number {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f29c1f;
+}
+
+.stat-card__label {
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+  color: #777777;
+}
+
+/* L'équipe */
+.festival-section__intro {
+  max-width: 720px;
+  margin: 0 auto 1.8rem;
+  font-size: 0.98rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+.team-groups {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.team-group {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.7rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.team-group__title {
+  margin: 0 0 0.9rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f29c1f;
+}
+
+.team-group__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Bloc Rejoignez-nous */
+.team-cta {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #f29c1f;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem 1.5rem;
+}
+
+.team-cta__title {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.team-cta__text {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.team-cta__link {
+  display: inline-block;
+  margin-top: 0.2rem;
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #f29c1f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* Valeurs – cartes */
+.values-grid {
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.value-card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.value-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f6f3e9;
+  margin-bottom: 0.4rem;
+}
+
+.value-card__icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.value-card__title {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.value-card__description {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Édition 2025 */
+.edition-2025 {
+  border-top: 3px solid #ffb52a;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.edition-2025__title {
+  max-width: 720px;
+  margin: 0 auto 1rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.edition-2025__description {
+  max-width: 720px;
+  margin: 0 auto 0.9rem;
+  font-size: 0.96rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .festival-section {
+    padding-inline: 3rem;
+  }
+}
 

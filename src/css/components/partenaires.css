@@ -59,8 +59,7 @@
   max-width: 85%;
   max-height: 85%;
   object-fit: contain;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
   display: block;
   margin: 0 auto;
 }
@@ -70,10 +69,6 @@
   border-color: var(--color-primary);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
-}
-
-.partners__item:hover img {
-  filter: grayscale(0%);
 }
 
 /* Responsive */

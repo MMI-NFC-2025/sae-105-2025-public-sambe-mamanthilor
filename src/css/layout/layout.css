@@ -39,10 +39,11 @@
   gap: 0.4rem;
   padding: 0.3rem 0.9rem;
   border-radius: 999px;
-  background-color: #ffffff;
-  color: #333333;
+  background-color: transparent;
+  color: #ffffff;
   font-size: 0.8rem;
   margin-bottom: 0.6rem;
+  border: 1px solid #ffffff;
 }
 
 .page-header__badge-icon {
@@ -54,6 +55,7 @@
   margin: 0 0 0.4rem;
   font-size: 2rem;
   font-weight: 800;
+  color: #ffffff;
 }
 
 .page-header__subtitle {
@@ -61,6 +63,7 @@
   font-size: 0.9rem;
   max-width: 320px;
   margin-inline: auto;
+  color: #ffffff;
 }
 
 /* Formulaire de recherche */
@@ -190,18 +193,21 @@
 .program-schedule {
   background-color: #f6f3e9;
   padding: 2.5rem 1.5rem 3rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .program-day {
-  max-width: 980px;
-  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
   padding: 1.6rem 1.5rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 .program-day__header {
@@ -239,16 +245,19 @@
 }
 
 .program-concert {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  text-align: center;
+  padding: 0.8rem 0;
 }
 
 .program-concert__time {
   display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  min-width: 70px;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .program-concert__time-icon {
@@ -258,23 +267,25 @@
 }
 
 .program-concert__time-value {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #444444;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #3b82f6;
 }
 
 .program-concert__artist {
-  margin: 0 0 0.2rem;
-  font-size: 1rem;
+  margin: 0;
+  font-size: 1.05rem;
   font-weight: 700;
+  color: #1a1a1a;
 }
 
 .program-concert__details {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.7rem;
+  flex-direction: column;
+  gap: 0.4rem;
   font-size: 0.85rem;
   color: #666666;
+  align-items: center;
 }
 
 .program-concert__venue {
@@ -316,6 +327,23 @@
   background-color: #f28f5e;
 }
 
+/* Responsive - Programme */
+@media (max-width: 992px) {
+  .program-schedule {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .program-schedule {
+    grid-template-columns: 1fr;
+  }
+
+  .program-day {
+    height: 350px;
+  }
+}
+
 /* Bloc infos pratiques */
 .program-infos {
   background-color: #ffffff;
@@ -341,7 +369,7 @@
 .program-infos__icon {
   width: 28px;
   height: 28px;
-  margin-bottom: 0.5rem;
+  margin: 0 auto 0.5rem;
 }
 
 .program-infos__title {
@@ -400,7 +428,7 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: 800;
-  color: #333333;
+  color: #050505;
 }
 
 .artists-section__filter {
@@ -732,13 +760,13 @@
   margin: 0 0 0.5rem;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #555555;
+  color: #ffffff;
 }
 
 .festival-map__description {
   margin: 0;
   font-size: 0.9rem;
-  color: #666666;
+  color: #ffffff;
   line-height: 1.7;
 }
 
@@ -1070,7 +1098,7 @@
 /* Alerte parking */
 .practical-access__item-alert {
   margin-top: 0.7rem;
-  background-color: #ffe4b3;
+  background-color:  #f29c1f; 
   border-radius: 14px;
   padding: 0.7rem 0.9rem;
   display: flex;

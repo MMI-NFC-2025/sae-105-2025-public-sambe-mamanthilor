@@ -59,9 +59,10 @@
   max-width: 85%;
   max-height: 85%;
   object-fit: contain;
-  transition: filter 0.3s ease, transform 0.3s ease;
   display: block;
   margin: 0 auto;
+  filter: none;                   /* force les vraies couleurs */
+  transition: transform 0.3s ease;
 }
 
 .partners__item:hover {
@@ -69,6 +70,10 @@
   border-color: var(--color-primary);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
+}
+
+.partners__item:hover img {
+  filter: none;                   /* pas de noir et blanc au survol */
 }
 
 /* Responsive */

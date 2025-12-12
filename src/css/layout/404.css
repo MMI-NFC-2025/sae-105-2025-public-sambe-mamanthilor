@@ -1,0 +1,139 @@
+/* PAGE 404 */
+
+.error-404 {
+  min-height: calc(100vh - 80px - 120px); /* header + footer approx */
+  background-color: #f6f3e9;
+  display: flex;
+  align-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.error-404__container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Bloc texte */
+.error-404__content {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 2rem 1.8rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.error-404__title {
+  margin: 0 0 0.3rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #f29c1f;
+}
+
+.error-404__subtitle {
+  margin: 0 0 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.error-404__description {
+  margin: 0 0 1.2rem;
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Boutons */
+.error-404__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.3rem;
+}
+
+.error-404__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.7rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.error-404__btn--primary {
+  background-color: #f29c1f;
+  color: #ffffff;
+}
+
+.error-404__btn--secondary {
+  background-color: #ffffff;
+  color: #f29c1f;
+  border-color: #f29c1f;
+}
+
+/* Suggestions */
+.error-404__suggestions-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.error-404__suggestions-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.error-404__suggestions-list a {
+  color: #f29c1f;
+  text-decoration: none;
+}
+
+.error-404__suggestions-list a:hover {
+  text-decoration: underline;
+}
+
+/* Illustration */
+.error-404__illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-404__illustration-icon {
+  width: 120px;
+  height: 120px;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: #8fd26a;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .error-404 {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .error-404__container {
+    grid-template-columns: 1fr;
+  }
+
+  .error-404__content {
+    order: 1;
+  }
+
+  .error-404__illustration {
+    order: 0;
+  }
+
+  .error-404__title {
+    font-size: 2.4rem;
+  }
+}

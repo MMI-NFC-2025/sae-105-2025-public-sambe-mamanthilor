@@ -1,3 +1,6 @@
+// URL: /index.html, /contact.html, /le-festival.html, /programme.html, /artistes.html, /scènes.html, /infos-pratiques.html, /lazy-birds.html, /404.html
+// Interaction: Menu hamburger - ouvre/ferme le menu de navigation
+
 const toggle = document.querySelector(".header__menu-toggle"); 
 const nav = document.querySelector(".header__nav");
 const logo = document.querySelector(".header__logo");
@@ -41,6 +44,9 @@ if (toggle && nav) {
     });
   });
 }
+// URL: /index.html
+// Interaction: Carrousel de découverte - boutons précédent/suivant pour défiler les cartes
+
 const slidesContainer = document.querySelector(".carousel__container");
 const slide = document.querySelector(".carousel__slide");
 const prevButton = document.querySelector(".carousel__btn--prev");

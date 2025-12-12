@@ -1,7 +1,8 @@
 /* SECTION HERO */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
+  max-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,8 +29,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: var(--spacing-xl);
-  padding: var(--spacing-2xl) var(--spacing-lg);
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-md);
   color: var(--light);
   max-width: 900px;
   width: 100%;
@@ -37,7 +38,7 @@
 
 /* Titre principal */
 .hero__title {
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 800;
   line-height: 1.15;
   margin: 0;
@@ -86,8 +87,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
   width: 100%;
 }
 
@@ -95,7 +96,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-sm);
-  padding: var(--spacing-md) var(--spacing-2xl);
+  padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
@@ -161,14 +162,54 @@
 }
 
 /* Petites adaptations mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    max-height: 500px;
+  }
+
+  .hero__info-item {
+    width: 90%;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .hero__btn {
+    width: 48%;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.85rem;
+  }
+
+  .hero__badge {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 55vh;
+  }
+
+  .hero__title {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+  }
+
+  .hero__infos {
+    gap: var(--spacing-sm);
+  }
+
   .hero__info-item {
     width: 100%;
-    justify-content: center;
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.85rem;
   }
 
   .hero__btn {
     width: 100%;
-    justify-content: center;
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.8rem;
   }
 }

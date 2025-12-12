@@ -12,3 +12,12 @@
 ## Sujet
 
 [https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862](https://moodle.univ-fcomte.fr/mod/page/view.php?id=882862)
+
+# Lien page avec interactions js
+# carousel découvrez le festival ,carousel automatique Nos partenaires , Menu
+https://subtle-empanada-b86d13.netlify.app/
+
+
+# carousel artistes
+https://subtle-empanada-b86d13.netlify.app/sc%C3%A8nes.html
+

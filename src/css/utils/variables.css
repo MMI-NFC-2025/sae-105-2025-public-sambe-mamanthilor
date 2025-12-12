@@ -31,6 +31,19 @@
     --color-bg: #FFFFFF;
     --color-bg-alt: #F9F9F9;
     --color-border: #E0E0E0;
+    
+    /* Couleurs complémentaires */
+    --color-accent: #F29C1F;
+    --color-accent-light: #FFB52A;
+    --color-bg-warm: #F6F3E9;
+    --color-bg-warm-light: #FDFBF6;
+    --color-text-dark: #333333;
+    --color-text-medium: #555555;
+    --color-text-light: #666666;
+    --color-text-lighter: #777777;
+    --color-overlay-dark: rgba(0, 0, 0, 0.4);
+    --color-overlay-darker: rgba(0, 0, 0, 0.75);
+    --color-overlay-menu: rgba(0, 0, 0, 0.9);
 
     /* ========== TYPOGRAPHIE ========== */
     

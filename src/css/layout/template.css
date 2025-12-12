@@ -517,3 +517,16 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+/* ========== COLORISATION DES ICÔNES ========== */
+
+/* Icône public en vert */
+.scene-card__detail-icon[src*="public"],
+.scene-hero__detail-icon[src*="public"] {
+  filter: invert(45%) sepia(96%) saturate(2000%) hue-rotate(90deg) brightness(1.1);
+}
+
+/* Icône repos en orange */
+.scene-features__item-icon[src*="repos"] {
+  filter: invert(48%) sepia(70%) saturate(1500%) hue-rotate(-5deg) brightness(1.05);
+}

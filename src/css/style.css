@@ -18,6 +18,9 @@
 @import url("./layout/footer.css");
 @import url("./layout/template.css");
 @import url("./layout/404.css");
+@import url("./layout/video.css");
+
+
 /* Components */
 @import url("./components/button.css");
 @import url("./components/card.css");

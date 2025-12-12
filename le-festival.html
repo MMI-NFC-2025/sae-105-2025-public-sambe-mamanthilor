@@ -21,9 +21,9 @@
     <header class="header">
         <div class="header__container">
             <a href="/" class="header__logo">
-                <img alt="Logo La Fanfa'Comtoise" src="/assets/icones/logo du site.svg" />
+                <img alt="Logo La Fanfa'Comtoise" src="/assets/icones/logo-du-site.svg">
             </a>
-            <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+            <button class="header__menu-toggle" aria-label="Ouvrir le menu de navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -59,9 +59,15 @@
     <!-- MAIN -->
     <main class="main">
         <!-- PAGE HEADER -->
-        <section class="page-header">
-            <h1 class="page-header__title">Le Festival</h1>
-            <p class="page-header__subtitle">Un festival gratuit, écoresponsable et convivial qui fait vibrer Montbéliard depuis 2018</p>
+        <section class="page-header page-header--video">
+            <video class="page-header__video" autoplay muted loop playsinline>
+                <source src="/assets/vidéo/vidéo-festival.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas les vidéos HTML5.
+            </video>
+            <div class="page-header__content">
+                <h1 class="page-header__title">Le Festival</h1>
+                <p class="page-header__subtitle">Un festival gratuit, écoresponsable et convivial qui fait vibrer Montbéliard depuis 2018</p>
+            </div>
         </section>
 
         <!-- SECTION NOTRE HISTOIRE -->
@@ -80,16 +86,19 @@
             <!-- CHIFFRES CLÉS -->
             <div class="festival-section__stats">
                 <article class="stat-card">
+                    <h3 class="stat-card__title">7<sup>e</sup> Édition</h3>
                     <span class="stat-card__number">7<sup>e</sup></span>
                     <p class="stat-card__label">Édition en 2025</p>
                 </article>
 
                 <article class="stat-card">
+                    <h3 class="stat-card__title">Festivaliers</h3>
                     <span class="stat-card__number">10k+</span>
                     <p class="stat-card__label">Festivaliers en 2024</p>
                 </article>
 
                 <article class="stat-card">
+                    <h3 class="stat-card__title">Artistes</h3>
                     <span class="stat-card__number">30+</span>
                     <p class="stat-card__label">Artistes depuis 2018</p>
                 </article>

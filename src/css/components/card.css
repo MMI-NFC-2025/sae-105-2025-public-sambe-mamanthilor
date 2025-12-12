@@ -146,11 +146,11 @@
 
 /* Pour les pages avec image de fond */
 .page-header--with-image .page-header__title {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .page-header--with-image .page-header__subtitle {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* Sections génériques */

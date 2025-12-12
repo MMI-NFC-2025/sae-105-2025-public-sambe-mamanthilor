@@ -1,4 +1,4 @@
-// URL: /index.html, /contact.html, /le-festival.html, /programme.html, /artistes.html, /scènes.html, /infos-pratiques.html, /lazy-birds.html, /404.html
+// URL: https://subtle-empanada-b86d13.netlify.app/
 // Interaction: Menu hamburger - ouvre/ferme le menu de navigation
 
 const toggle = document.querySelector(".header__menu-toggle"); 
@@ -30,6 +30,7 @@ if (toggle && nav) {
     page.classList.toggle("u-noscroll", isClosed);
   });
   
+  //URL:https://subtle-empanada-b86d13.netlify.app/
   // Fermer le menu au click sur les liens
   const menuLinks = nav.querySelectorAll(".header__nav-link");
   menuLinks.forEach(link => {
@@ -44,7 +45,7 @@ if (toggle && nav) {
     });
   });
 }
-// URL: /index.html
+// URL: https://subtle-empanada-b86d13.netlify.app/  & pour le 2 e carousel https://subtle-empanada-b86d13.netlify.app/sc%C3%A8nes.html
 // Interaction: Carrousel de découverte - boutons précédent/suivant pour défiler les cartes
 
 const slidesContainer = document.querySelector(".carousel__container");

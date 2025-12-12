@@ -113,7 +113,6 @@
 }
 
 .header__nav[hidden] {
-  display: none;
   transform: translateX(100%);
 }
 

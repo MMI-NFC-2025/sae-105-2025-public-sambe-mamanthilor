@@ -1,0 +1,1517 @@
+/* PAGE PROGRAMME */
+
+/* Hero avec image */
+.page-header--with-image {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.page-header__bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-header--with-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.75) 100%);
+}
+
+.page-header__content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.page-header__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.page-header__badge-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.page-header__title {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.page-header__subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  max-width: 320px;
+  margin-inline: auto;
+}
+
+/* Formulaire de recherche */
+.search-form {
+  background-color: #f6f3e9;
+  padding: 2.5rem 1.5rem 2rem;
+}
+
+.search-form__header {
+  max-width: 980px;
+  margin: 0 auto 0.8rem;
+}
+
+.search-form__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-form__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.search-form__container {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem 1.6rem;
+}
+
+.search-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.search-form__label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.search-form__input-wrapper {
+  position: relative;
+}
+
+.search-form__input-icon {
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+.search-form__input,
+.search-form__select,
+.search-form__input-time {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  padding-left: 2.3rem;
+  border-radius: 999px;
+  border: 1px solid #e1e1e1;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.search-form__select,
+.search-form__input-time {
+  padding-left: 0.9rem;
+}
+
+/* Boutons du formulaire */
+.search-form__actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+
+.search-form__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.search-form__btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.search-form__btn--search {
+  background-color: #f29c1f;
+  color: #ffffff;
+}
+
+.search-form__btn--reset {
+  background-color: #f0f0f0;
+  color: #555555;
+}
+
+.search-form__btn--pdf {
+  background-color: #ffffff;
+  color: #f29c1f;
+  border: 1px solid #f29c1f;
+}
+
+/* Programme – jours & concerts */
+.program-schedule {
+  background-color: #f6f3e9;
+  padding: 2.5rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.program-day {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  padding: 1.6rem 1.5rem;
+}
+
+.program-day__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.program-day__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.program-day__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.program-day__date {
+  margin: 0;
+  font-size: 0.86rem;
+  color: #777777;
+}
+
+/* Liste des concerts */
+.program-day__concerts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 0.9rem;
+}
+
+.program-concert {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+}
+
+.program-concert__time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 70px;
+}
+
+.program-concert__time-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+.program-concert__time-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.program-concert__artist {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.program-concert__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.7rem;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.program-concert__venue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.program-concert__detail-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+/* Pastilles de genre */
+.program-concert__genre {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.program-concert__genre--jazz {
+  background-color: #f29c1f;
+}
+
+.program-concert__genre--fanfare {
+  background-color: #ffb52a;
+}
+
+.program-concert__genre--street {
+  background-color: #ff7f50;
+}
+
+.program-concert__genre--jazz-soul {
+  background-color: #f28f5e;
+}
+
+/* Bloc infos pratiques */
+.program-infos {
+  background-color: #ffffff;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.program-infos__grid {
+  max-width: 980px;
+  margin: 0 auto 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.program-infos__item {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.program-infos__icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0.5rem;
+}
+
+.program-infos__title {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.program-infos__description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.program-infos__link {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f29c1f;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .search-form__container {
+    padding-inline: 2rem;
+  }
+
+  .program-infos__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* PAGE ARTISTES */
+
+/* Hero avec image : réutilise .page-header--with-image de la page programme */
+
+/* Section artistes */
+.artists-section {
+  background-color: #f6f3e9;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.artists-section__header {
+  max-width: 980px;
+  margin: 0 auto 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.artists-section__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.artists-section__filter {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.artists-section__select {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* Grille artistes */
+.artists-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+/* Carte artiste */
+.artist-card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+}
+
+.artist-card__image-wrapper {
+  position: relative;
+}
+
+.artist-card__image {
+  width: 100%;
+  display: block;
+  height: 210px;
+  object-fit: cover;
+}
+
+/* Badge de genre sur l'image */
+.artist-card__badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.artist-card__badge--jazz {
+  background-color: #f29c1f;
+}
+
+.artist-card__badge--fanfare {
+  background-color: #ffb52a;
+}
+
+.artist-card__badge--street {
+  background-color: #ff7f50;
+}
+
+.artist-card__content {
+  padding: 1.3rem 1.5rem 1.4rem;
+}
+
+.artist-card__title {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+/* Infos (date + lieu) */
+.artist-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.artist-card__info-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  color: #666666;
+}
+
+.artist-card__info-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+/* Lien "En savoir plus" */
+.artist-card__link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f29c1f;
+  text-decoration: none;
+}
+
+.artist-card__link:hover {
+  text-decoration: underline;
+}
+
+/* Section CTA verte */
+.artists-cta {
+  background-color: #8fd26a;
+  color: #1f3520;
+  text-align: center;
+  padding: 2.5rem 1.5rem 2.7rem;
+}
+
+.artists-cta__icon {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 0.4rem;
+}
+
+.artists-cta__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.artists-cta__description {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.artists-cta__btn {
+  display: inline-block;
+  padding: 0.8rem 1.9rem;
+  border-radius: 999px;
+  background-color: #f29c1f;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .artists-grid {
+    gap: 1.5rem;
+  }
+}
+/* PAGE SCÈNES */
+
+/* En-tête simple */
+.page-header {
+  background-color: #f6f3e9;
+  padding: 3.5rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.page-header__title {
+  margin: 0 0 0.6rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222222;
+}
+
+.page-header__subtitle {
+  margin: 0;
+  max-width: 620px;
+  margin-inline: auto;
+  font-size: 0.96rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Section cartes de scènes */
+.scenes-section {
+  background-color: #f6f3e9;
+  padding: 2.5rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.scene-card {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.08);
+}
+
+.scene-card__image-wrapper {
+  overflow: hidden;
+}
+
+.scene-card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenu de la carte */
+.scene-card__content {
+  padding: 1.6rem 1.6rem 1.8rem;
+}
+
+.scene-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.scene-card__number {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f29c1f;
+}
+
+.scene-card__number-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.scene-card__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.scene-card__description {
+  margin: 0.7rem 0 1rem;
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Détails (lieu + capacité) */
+.scene-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+}
+
+.scene-card__detail-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  color: #666666;
+}
+
+.scene-card__detail-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.75;
+}
+
+/* Lien "En savoir plus" */
+.scene-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(242, 156, 31);
+  text-decoration: none;
+}
+
+.scene-card__link-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Bloc plan du festival */
+.festival-map {
+  background-color: #ffffff;
+  padding: 2.8rem 1.5rem;
+}
+
+.festival-map__content {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #f29c1f;   /* carte orange */
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 2.1rem 1.8rem 2.3rem;
+  color: #ffffff;
+}
+
+.festival-map__title,
+.festival-map__subtitle,
+.festival-map__description {
+  color: #ffffff;
+}
+
+
+.festival-map__icon {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 0.4rem;
+}
+
+.festival-map__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.festival-map__subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555555;
+}
+
+.festival-map__description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666666;
+  line-height: 1.7;
+}
+
+/* Bon à savoir */
+.good-to-know {
+  background-color:  #8fd26a;
+  padding: 2.7rem 1.5rem 3rem;
+}
+
+.good-to-know__title {
+  max-width: 980px;
+  margin: 0 auto 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333333;
+  text-align: center;
+}
+
+.good-to-know__grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.good-to-know__item {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.4rem 1.4rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.good-to-know__item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.good-to-know__item-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.good-to-know__item-title {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: #f29c1f;
+}
+
+.good-to-know__item-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .scenes-section {
+    padding-inline: 3rem;
+  }
+
+  .festival-map {
+    padding-inline: 3rem;
+  }
+
+  .good-to-know {
+    padding-inline: 3rem;
+  }
+
+  .good-to-know__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* PAGE INFOS PRATIQUES */
+
+/* En-tête */
+.page-header {
+  background-color: #f6f3e9;
+  padding: 3.5rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.page-header__title {
+  margin: 0 0 0.6rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222222;
+}
+
+.page-header__subtitle {
+  margin: 0;
+  max-width: 620px;
+  margin-inline: auto;
+  font-size: 0.96rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Bloc Tarifs */
+.practical-tariffs {
+  background-color: #f6f3e9;
+  padding: 2.5rem 1.5rem 2.7rem;
+}
+
+.practical-tariffs__header {
+  max-width: 980px;
+  margin: 0 auto 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.practical-tariffs__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.practical-tariffs__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+/* Carte "festival gratuit" */
+.practical-tariffs__free {
+  max-width: 980px;
+  margin: 0 auto 1rem;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.practical-tariffs__free-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0.4rem;
+}
+
+.practical-tariffs__free-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.practical-tariffs__free-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+/* Carte restauration */
+.practical-tariffs__food {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.practical-tariffs__food-title {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f29c1f;
+}
+
+.practical-tariffs__food-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Hébergements */
+.practical-accommodation {
+  background-color: #fdfbf6;
+  padding: 2.7rem 1.5rem 2.9rem;
+}
+
+.practical-accommodation__header {
+  max-width: 980px;
+  margin: 0 auto 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.practical-accommodation__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.practical-accommodation__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.practical-accommodation__grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.practical-accommodation__category {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.practical-accommodation__category-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.practical-accommodation__category-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.practical-accommodation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.practical-accommodation__item-name {
+  margin: 0 0 0.1rem;
+  font-weight: 700;
+}
+
+.practical-accommodation__item-info {
+  margin: 0;
+}
+
+.practical-accommodation__category-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Accès & transport */
+.practical-access {
+  background-color: #f6f3e9;
+  padding: 2.7rem 1.5rem 3rem;
+}
+
+.practical-access__header {
+  max-width: 980px;
+  margin: 0 auto 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.practical-access__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.practical-access__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.practical-access__grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.practical-access__item {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.4rem 1.4rem 1.6rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.practical-access__item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.6rem;
+}
+
+.practical-access__item-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.practical-access__item-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.practical-access__item-content {
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+.practical-access__item-content ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+/* Alerte parking */
+.practical-access__item-alert {
+  margin-top: 0.7rem;
+  background-color: #ffe4b3;
+  border-radius: 14px;
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.practical-access__item-alert-icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.05rem;
+}
+
+/* Carte transports doux verte */
+.practical-access__item:nth-child(3) {
+  background-color: #8fd26a;
+  color: #1f3520;
+}
+
+.practical-access__item:nth-child(3) .practical-access__item-title {
+  color: #1f3520;
+}
+
+.practical-access__item:nth-child(3) .practical-access__item-content {
+  color: #1f3520;
+}
+
+/* FAQ */
+.practical-faq {
+  background-color: #fdfbf6;
+  padding: 2.7rem 1.5rem 3rem;
+}
+
+.practical-faq__header {
+  max-width: 980px;
+  margin: 0 auto 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.practical-faq__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.practical-faq__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.practical-faq__items {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.practical-faq__item + .practical-faq__item {
+  border-top: 1px solid #f0f0f0;
+}
+
+.practical-faq__item summary {
+  list-style: none;
+}
+
+.practical-faq__item-question {
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.practical-faq__item-chevron {
+  width: 16px;
+  height: 16px;
+}
+
+.practical-faq__item[open] .practical-faq__item-chevron {
+  transform: rotate(180deg);
+}
+
+.practical-faq__item-answer {
+  padding: 0 1.2rem 0.9rem;
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* CTA contact orange */
+.practical-cta {
+  background-color: #f29c1f;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.7rem 1.5rem 3rem;
+}
+
+.practical-cta__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.practical-cta__subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.practical-cta__btn {
+  display: inline-block;
+  padding: 0.8rem 1.9rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #f29c1f;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .practical-accommodation__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .practical-access__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* PAGE CONTACT */
+
+/* En-tête */
+.page-header {
+  background-color: #f6f3e9;
+  padding: 3.5rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.page-header__title {
+  margin: 0 0 0.6rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #222222;
+}
+
+.page-header__subtitle {
+  margin: 0;
+  max-width: 620px;
+  margin-inline: auto;
+  font-size: 0.96rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* Coordonnées */
+.contact-info {
+  background-color: #f6f3e9;
+  padding: 2.5rem 1.5rem 2.7rem;
+}
+
+.contact-info__title {
+  max-width: 980px;
+  margin: 0 auto 1rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.contact-info__grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.contact-info__item {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.4rem 1.4rem;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+}
+
+.contact-info__item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-info__item-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-info__item-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.contact-info__item-content {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.contact-info__item-content a {
+  color: #f29c1f;
+  text-decoration: none;
+}
+
+.contact-info__item-content a:hover {
+  text-decoration: underline;
+}
+
+.contact-info__item-detail {
+  font-size: 0.85rem;
+  color: #777777;
+}
+
+/* Bloc réseaux verts */
+.contact-socials {
+  background-color: #8fd26a;
+  padding: 2.2rem 1.5rem 2.4rem;
+  text-align: left;
+}
+
+.contact-socials__title {
+  max-width: 980px;
+  margin: 0 auto 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1f3520;
+}
+
+.contact-socials__subtitle {
+  max-width: 980px;
+  margin: 0 auto 0.9rem;
+  font-size: 0.9rem;
+  color: #1f3520;
+}
+
+.contact-socials__links {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.contact-socials__link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-socials__link img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Bloc rejoindre l’équipe (orange clair) */
+.contact-join {
+  background-color: #f29c1f;
+  color: #ffffff;
+  padding: 2.3rem 1.5rem 2.4rem;
+}
+
+.contact-join__header {
+  max-width: 980px;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.contact-join__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-join__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.contact-join__description {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+
+/* Formulaire de contact */
+.contact-form {
+  background-color: #f6f3e9;
+  padding: 2.7rem 1.5rem 3rem;
+}
+
+.contact-form__title {
+  max-width: 980px;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.form {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem 1.6rem 1.9rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.form__group {
+  margin-bottom: 0.9rem;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.form__required {
+  color: #f29c1f;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.form__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Bouton */
+.form__submit {
+  margin-top: 0.6rem;
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  background-color: #f29c1f;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  cursor: pointer;
+}
+
+.form__submit-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-form__note {
+  max-width: 980px;
+  margin: 0.7rem auto 0;
+  font-size: 0.8rem;
+  color: #777777;
+}
+
+/* Où nous trouver */
+.contact-location {
+  background-color: #ffffff;
+  padding: 2.7rem 1.5rem 3rem;
+}
+
+.contact-location__title {
+  max-width: 980px;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #333333;
+}
+
+.contact-location__map {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem 1.6rem 2rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.contact-location__map-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.4rem;
+}
+
+.contact-location__map-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.contact-location__map-address {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.contact-location__map-note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #888888;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .contact-info__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

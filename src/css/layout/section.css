@@ -88,6 +88,7 @@
 .search-form__icon {
   width: 18px;
   height: 18px;
+  filter: invert(48%) sepia(70%) saturate(1500%) hue-rotate(-5deg) brightness(1.05);
 }
 
 .search-form__container {
@@ -457,94 +458,6 @@
 }
 
 /* Carte artiste */
-.artist-card {
-  background-color: #ffffff;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 14px 34px rgba(0,0,0,0.08);
-}
-
-.artist-card__image-wrapper {
-  position: relative;
-}
-
-.artist-card__image {
-  width: 100%;
-  display: block;
-  height: 210px;
-  object-fit: cover;
-}
-
-/* Badge de genre sur l'image */
-.artist-card__badge {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.artist-card__badge--jazz {
-  background-color: #f29c1f;
-}
-
-.artist-card__badge--fanfare {
-  background-color: #ffb52a;
-}
-
-.artist-card__badge--street {
-  background-color: #ff7f50;
-}
-
-.artist-card__content {
-  padding: 1.3rem 1.5rem 1.4rem;
-}
-
-.artist-card__title {
-  margin: 0 0 0.6rem;
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: #333333;
-}
-
-/* Infos (date + lieu) */
-.artist-card__info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  margin-bottom: 0.8rem;
-}
-
-.artist-card__info-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.88rem;
-  color: #666666;
-}
-
-.artist-card__info-icon {
-  width: 16px;
-  height: 16px;
-  opacity: 0.7;
-}
-
-/* Lien "En savoir plus" */
-.artist-card__link {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #f29c1f;
-  text-decoration: none;
-}
-
-.artist-card__link:hover {
-  text-decoration: underline;
-}
-
 /* Section CTA verte */
 .artists-cta {
   background-color: #8fd26a;
@@ -619,104 +532,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-}
-
-.scene-card {
-  max-width: 980px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 14px 36px rgba(0,0,0,0.08);
-}
-
-.scene-card__image-wrapper {
-  overflow: hidden;
-}
-
-.scene-card__image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-/* Contenu de la carte */
-.scene-card__content {
-  padding: 1.6rem 1.6rem 1.8rem;
-}
-
-.scene-card__header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  margin-bottom: 0.6rem;
-}
-
-.scene-card__number {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #f29c1f;
-}
-
-.scene-card__number-icon {
-  width: 16px;
-  height: 16px;
-}
-
-.scene-card__title {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #333333;
-}
-
-.scene-card__description {
-  margin: 0.7rem 0 1rem;
-  font-size: 0.95rem;
-  color: #555555;
-  line-height: 1.7;
-}
-
-/* Détails (lieu + capacité) */
-.scene-card__details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  margin-bottom: 0.9rem;
-}
-
-.scene-card__detail-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.88rem;
-  color: #666666;
-}
-
-.scene-card__detail-icon {
-  width: 16px;
-  height: 16px;
-  opacity: 0.75;
-}
-
-/* Lien "En savoir plus" */
-.scene-card__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: rgb(242, 156, 31);
-  text-decoration: none;
-}
-
-.scene-card__link-icon {
-  width: 14px;
-  height: 14px;
 }
 
 /* Bloc plan du festival */

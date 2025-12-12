@@ -15,9 +15,9 @@
 
 # Lien page avec interactions js
 # carousel découvrez le festival ,carousel automatique Nos partenaires , Menu
-https://subtle-empanada-b86d13.netlify.app/
+http://lafanfacomtoise.maman-sambe.fr/  
 
 
 # carousel artistes
-https://subtle-empanada-b86d13.netlify.app/sc%C3%A8nes.html
+http://lafanfacomtoise.maman-sambe.fr/sc%C3%A8nes.html
 
